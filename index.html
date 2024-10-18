@@ -97,5 +97,26 @@
             <p>💼 LinkedIn: <a href="#">プロフィールリンク</a></p>
         </section>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const skills = document.querySelectorAll('.skill-list li');
+          skills.forEach(skill => {
+            const years = parseInt(skill.dataset.years);
+            const maxYears = 5; // 5年で100%とする
+            const percentage = Math.min((years / maxYears) * 100, 100);
+            
+            const bar = document.createElement('div');
+            bar.className = 'skill-bar';
+            const progress = document.createElement('div');
+            progress.className = 'skill-progress';
+            bar.appendChild(progress);
+            skill.appendChild(bar);
+            
+            setTimeout(() => {
+              progress.style.width = `${percentage}%`;
+            }, 100);
+          });
+        });
+    </script>
 </body>
 </html>
