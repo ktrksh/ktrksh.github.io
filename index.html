@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kentaro Kashio - HTMLコーダー</title>
+    <title>樫尾健太郎 - プロフェッショナルHTMLコーダー</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,58 +12,90 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #f4f4f4;
         }
         h1, h2 {
             color: #0066cc;
         }
-        .skill-list {
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .skill-list, .project-list {
             list-style-type: none;
             padding: 0;
         }
-        .skill-list li {
+        .skill-list li, .project-list li {
             margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .skill-list li:before, .project-list li:before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+        }
+        .project-item {
+            margin-bottom: 20px;
+        }
+        .project-title {
+            font-weight: bold;
+        }
+        .project-description {
+            font-style: italic;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>👨‍💻 Kentaro Kashio</h1>
-        <p>🚀 HTMLコーダー
-</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>👨‍💻 樫尾健太郎</h1>
+            <p>🚀 プロフェッショナルHTMLコーダー</p>
+        </header>
 
-    <section id="about">
-        <h2>🧠 プロフィール</h2>
-        <p>効率的で保守性の高いコーディングを提供するHTMLコーダーです。最新のWeb標準とベストプラクティスに基づいた高品質なマークアップを心がけています。</p>
-    </section>
+        <section id="about">
+            <h2>🧠 プロフィール</h2>
+            <p>効率的で保守性の高いコーディングを提供するHTMLコーダーです。最新のWeb標準とベストプラクティスに基づいた高品質なマークアップを心がけています。</p>
+        </section>
 
-    <section id="skills">
-        <h2>🛠️ 専門スキル</h2>
-        <ul class="skill-list">
-            <li>* 📌 HTML5 / CSS3によるセマンティックなマークアップ</li>
-            <li>* 📱 レスポンシブウェブデザイン</li>
-            <li>* 🌐 クロスブラウザ対応</li>
-            <li>* 🏗️ CSS設計（BEM, FLOCSS）</li>
-            <li>* 🔄 バージョン管理（Git/GitHub）</li>
-            <li>* ⚡ パフォーマンス最適化</li>
-            <li>* ♿ アクセシビリティ対応</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>🛠️ 専門スキル</h2>
+            <ul class="skill-list">
+                <li>HTML5 / CSS3によるセマンティックなマークアップ</li>
+                <li>レスポンシブウェブデザイン</li>
+                <li>クロスブラウザ対応</li>
+                <li>CSS設計（BEM, FLOCSS）</li>
+                <li>バージョン管理（Git/GitHub）</li>
+                <li>パフォーマンス最適化</li>
+                <li>アクセシビリティ対応</li>
+            </ul>
+        </section>
 
-    <section id="experience">
-        <h2>💼 実績</h2>
-        <ul class="skill-list">
-            <li>🛒 大手ECサイトのレスポンシブデザイン実装</li>
-            <li>🏢 コーポレートサイトのHTML/CSSコーディング</li>
-            <li>🚀 ランディングページの高速化対応</li>
-            <li>📧 HTMLメールテンプレートの作成と最適化</li>
-        </ul>
-    </section>
+        <section id="projects">
+            <h2>💼 プロジェクト</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <div class="project-title">HTMLメールテンプレート</div>
+                    <div class="project-description">レスポンシブデザインに対応したHTMLメールのテンプレート</div>
+                    <a href="https://ktrksh.github.io/email-template/">プロジェクトを見る</a>
+                </li>
+                <!-- 他のプロジェクトも同様に追加 -->
+            </ul>
+        </section>
 
-    <section id="contact">
-        <h2>📞 連絡先</h2>
-        <p>📧 Email: ken7taro29@icloud.com</p>
-        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/kentaro-kashio-13666619a/">プロフィールリンク</a></p>
-    </section>
+        <section id="contact">
+            <h2>📞 連絡先</h2>
+            <p>📧 Email: ken7taro29@icloud.com</p>
+            <p>💼 LinkedIn: <a href="#">プロフィールリンク</a></p>
+        </section>
+    </div>
 </body>
 </html>
