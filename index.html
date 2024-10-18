@@ -53,7 +53,7 @@
         document.addEventListener('DOMContentLoaded', function() {
           const skills = document.querySelectorAll('.skill-list li');
           skills.forEach(skill => {
-            const years = parseInt(skill.dataset.years);
+            const years = parseInt(skill.getAttribute('data-years'));
             const maxYears = 5; // 5年で100%とする
             const percentage = Math.min((years / maxYears) * 100, 100);
             
