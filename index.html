@@ -15,60 +15,34 @@
 
         <section id="about">
             <h2>🧠 プロフィール</h2>
-            <p>効率的で保守性の高いコーディングを提供するHTMLコーダーです。最新のWeb標準とベストプラクティスに基づいた高品質なマークアップを心がけています。</p>
+            <p>効率的で保守性の高いコーディングを提供するHTMLコーダーです。最新のWeb標準とベストプラクティスに基づいた高品質なマークアップを心がけています。建築業界での経験を活かし、構造的で保守性の高いコードを設計します。</p>
         </section>
 
         <section id="skills">
             <h2>🛠️ 専門スキル</h2>
-            <ul class="skill-list">
-                <li data-skill="HTML5" data-years="2">HTML5 / CSS3によるセマンティックなマークアップ</li>
-                <li data-skill="HTML5" data-years="2">レスポンシブウェブデザイン</li>
-                <li data-skill="HTML5" data-years="2">クロスブラウザ対応</li>
-                <li data-skill="HTML5" data-years="1">CSS設計（BEM, FLOCSS）</li>
-                <li data-skill="HTML5" data-years="1">バージョン管理（Git/GitHub）</li>
-                <li data-skill="HTML5" data-years="1">パフォーマンス最適化</li>
-                <li data-skill="HTML5" data-years="2">アクセシビリティ対応</li>
-            </ul>
-        </section>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>コーディング</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <span class="skill-icon">📝</span>
+                            <h4>フロントエンド開発</h4>
+                            <ul>
+                                <li>HTML5/CSS3</li>
+                                <li>レスポンシブデザイン</li>
+                                <li>クロスブラウザ対応</li>
+                            </ul>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-icon">🎨</span>
+                            <h4>CSS設計</h4>
+                            <ul>
+                                <li>BEM</li>
+                                <li>FLOCSS</li>
+                                <li>Sass</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-        <section id="projects">
-            <h2>💼 プロジェクト</h2>
-            <ul class="project-list">
-                <li class="project-item">
-                    <div class="project-title">HTMLメールテンプレート</div>
-                    <div class="project-description">レスポンシブデザインに対応したHTMLメールのテンプレート</div>
-                    <a href="https://ktrksh.github.io/email-template/">プロジェクトを見る</a>
-                </li>
-                <!-- 他のプロジェクトも同様に追加 -->
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>📞 連絡先</h2>
-            <p>📧 Email: ken7taro29@icloud.com</p>
-            <p>💼 LinkedIn: <a href="#">プロフィールリンク</a></p>
-        </section>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const skills = document.querySelectorAll('.skill-list li');
-          skills.forEach(skill => {
-            const years = parseInt(skill.getAttribute('data-years'));
-            const maxYears = 5; // 5年で100%とする
-            const percentage = Math.min((years / maxYears) * 100, 100);
-            
-            const bar = document.createElement('div');
-            bar.className = 'skill-bar';
-            const progress = document.createElement('div');
-            progress.className = 'skill-progress';
-            bar.appendChild(progress);
-            skill.appendChild(bar);
-            
-            setTimeout(() => {
-              progress.style.width = `${percentage}%`;
-            }, 100);
-          });
-        });
-    </script>
-</body>
-</html>
+                <div clas
