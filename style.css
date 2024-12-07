@@ -1,77 +1,62 @@
-/* 既存のスタイルはそのままに、以下を追加 */
-
-.skills-container {
-    margin-top: 2rem;
-}
-
-.skill-category {
-    margin-bottom: 2rem;
-}
-
-.skill-category h3 {
-    color: #0066cc;
-    border-bottom: 2px solid #0066cc;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.skill-cards {
+.skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
+    padding: 1rem;
 }
 
 .skill-card {
-    background: #ffffff;
+    background: white;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent;
 }
 
 .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card.primary { border-color: #4A90E2; }
+.skill-card.secondary { border-color: #50E3C2; }
+.skill-card.accent { border-color: #F5A623; }
+.skill-card.neutral { border-color: #9B9B9B; }
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .skill-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    display: block;
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
 }
 
-.skill-card h4 {
-    color: #333;
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-}
-
-.skill-card ul {
+.skill-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.skill-card li {
+.skill-list li {
     padding: 0.5rem 0;
-    color: #666;
+    color: #4A4A4A;
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
 }
 
-.skill-card li:before {
+.skill-list li::before {
     content: "→";
     position: absolute;
     left: 0;
-    color: #0066cc;
+    color: #4A90E2;
 }
 
 @media (max-width: 768px) {
-    .skill-cards {
+    .skills-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .skill-card {
-        margin-bottom: 1rem;
     }
 }
