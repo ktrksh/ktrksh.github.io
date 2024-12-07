@@ -3,99 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>樫尾健太郎 - HTMLコーダー</title>
+    <title>樫尾健太郎 - フロントエンド開発者・HTMLコーダー</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="建築業界での7年の経験を活かした、構造的で保守性の高いコーディングを提供するHTMLコーダーです。">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>👨‍💻 樫尾健太郎</h1>
-            <p>🚀 HTMLコーダー</p>
+        <header class="header">
+            <h1 class="fade-in">樫尾健太郎</h1>
+            <p class="subtitle fade-in">フロントエンド開発者・HTMLコーダー</p>
         </header>
 
-        <section id="about">
-            <h2>🧠 プロフィール</h2>
-            <p>効率的で保守性の高いコーディングを提供するHTMLコーダーです。建築業界での7年の経験を活かし、構造的で論理的なコードを設計します。GA4やSNSマーケティングなどのデジタルマーケティング知見と、一眼レフによる写真撮影スキルも保有しています。福岡エリアでの撮影にも対応可能です。</p>
+        <section id="about" class="about-section">
+            <h2 class="section-title">プロフィール</h2>
+            <div class="content-wrapper">
+                <p>効率的で保守性の高いコーディングを提供するHTMLコーダーです。建築業界での7年の経験を活かし、構造的で論理的なコードを設計します。GA4やSNSマーケティングなどのデジタルマーケティング知見と、一眼レフによる写真撮影スキルも保有しています。福岡エリアでの撮影にも対応可能です。</p>
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>🛠️ 専門スキル</h2>
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">専門スキル</h2>
             <div class="skills-grid">
-                <div class="skill-card primary">
+                <div class="skill-card">
                     <div class="skill-header">
-                        <i class="skill-icon">💻</i>
                         <h3>フロントエンド開発</h3>
                     </div>
                     <ul class="skill-list">
                         <li>HTML5/CSS3マークアップ</li>
                         <li>レスポンシブデザイン</li>
                         <li>クロスブラウザ対応</li>
+                        <li>Sass/CSS設計</li>
                     </ul>
                 </div>
 
-                <div class="skill-card secondary">
+                <div class="skill-card">
                     <div class="skill-header">
-                        <i class="skill-icon">🎯</i>
                         <h3>マーケティング</h3>
                     </div>
                     <ul class="skill-list">
                         <li>GA4アクセス解析</li>
                         <li>メールマーケティング</li>
                         <li>SNSマーケティング</li>
+                        <li>コンテンツ戦略</li>
                     </ul>
                 </div>
 
-                <div class="skill-card accent">
+                <div class="skill-card">
                     <div class="skill-header">
-                        <i class="skill-icon">📸</i>
                         <h3>クリエイティブ</h3>
                     </div>
                     <ul class="skill-list">
                         <li>一眼レフ写真撮影</li>
                         <li>Photoshop/Lightroom</li>
                         <li>バナーデザイン</li>
+                        <li>画像最適化</li>
                     </ul>
                 </div>
 
-                <div class="skill-card neutral">
+                <div class="skill-card">
                     <div class="skill-header">
-                        <i class="skill-icon">🏗️</i>
                         <h3>建築知識</h3>
                     </div>
                     <ul class="skill-list">
                         <li>二級建築士</li>
                         <li>現場監理経験7年</li>
                         <li>施工図・CAD</li>
+                        <li>建築写真撮影</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="projects">
-            <h2>💼 実績</h2>
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">実績</h2>
             <div class="projects-grid">
-                <div class="project-item">
-                    <h3>HTMLメールテンプレート</h3>
-                    <p>レスポンシブ対応のメールテンプレート開発</p>
+                <article class="project-item">
+                    <h3>HTMLメールテンプレート開発</h3>
+                    <p>主要なメールクライアントに対応したレスポンシブメールテンプレートの設計・実装</p>
                     <div class="project-tech">HTML/CSS</div>
-                </div>
+                </article>
                 
-                <div class="project-item">
-                    <h3>美容クリニックLP</h3>
-                    <p>コーディング＋GA4アクセス解析導入</p>
-                    <div class="project-tech">HTML/CSS/GA4</div>
-                </div>
+                <article class="project-item">
+                    <h3>美容クリニックLP制作</h3>
+                    <p>デザインカンプからのコーディング、GA4導入、アクセス解析の実装まで一貫して担当</p>
+                    <div class="project-tech">HTML/CSS/JavaScript/GA4</div>
+                </article>
 
-                <div class="project-item">
-                    <h3>企業向けメルマガ施策</h3>
-                    <p>企画立案から実装、効果測定まで</p>
+                <article class="project-item">
+                    <h3>企業向けメールマーケティング</h3>
+                    <p>戦略立案からコンテンツ制作、実装、効果測定までのトータルソリューション提供</p>
                     <div class="project-tech">HTML/マーケティング</div>
-                </div>
+                </article>
             </div>
         </section>
 
-        <section id="pricing">
-            <h2>💰 料金表</h2>
+        <section id="pricing" class="pricing-section">
+            <h2 class="section-title">料金表</h2>
             <div class="pricing-grid">
                 <div class="price-item">
                     <h3>コーディング基本料金</h3>
@@ -118,10 +122,12 @@
             <p class="price-note">※ 価格は全て税抜です。具体的な料金は案件の内容に応じて都度お見積りいたします。</p>
         </section>
 
-        <section id="contact">
-            <h2>📞 連絡先</h2>
-            <p>📧 Email: ken7taro29@icloud.com</p>
-            <p>📱 対応エリア: 福岡県を中心に全国対応可能</p>
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">連絡先</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:ken7taro29@icloud.com">ken7taro29@icloud.com</a></p>
+                <p>対応エリア: 福岡県を中心に全国対応可能</p>
+            </div>
         </section>
     </div>
 </body>
